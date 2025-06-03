@@ -1,0 +1,42 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 50%, #f0abfc 100%);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Abstract blobs for extra uniqueness */
+.lab-bg-blobs {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+.lab-bg-blobs::before,
+.lab-bg-blobs::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.35;
+}
+.lab-bg-blobs::before {
+    width: 600px; height: 600px;
+    background: #a5b4fc;
+    top: -150px; left: -150px;
+}
+.lab-bg-blobs::after {
+    width: 700px; height: 700px;
+    background: #f0abfc;
+    bottom: -200px; right: -200px;
+}
+
+/* Make sure your main content is above the blobs */
+.pese-lab-section,
+.lab-activity-section,
+footer,
+nav {
+    position: relative;
+    z-index: 1;
+}

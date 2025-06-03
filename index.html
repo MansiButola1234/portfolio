@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+</head>
+<body>
+    <!-- Attractive Navigation Labels at the Top -->
+     <!-- Modern Navigation Bar -->
+<nav class="navbar">
+    <div class="navbar-left">
+        <span class="logo">My Portfolio</span>
+    </div>
+    <ul class="navbar-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="pese-lab.html">Pese Lab</a></li>
+        <li><a href="#contact">Get in Touch</a></li>
+        <li><a href="my_resume (5).pdf" target="_blank">Resume</a></li>
+    </ul>
+</nav>
+
+
+    <!-- Hero Section -->
+ <section id="home" class="hero">
+    <div class="hero-bg-shape"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">
+            <span>Welcome to</span>
+            <br>
+            <span class="hero-highlight">My Portfolio</span>
+        </h1>
+        <p class="hero-subtitle">
+            I’m Mansi Butola, a passionate Computer Science student and aspiring developer.<br>
+            Explore my projects, skills, and journey below!
+        </p>
+        <a href="#projects" class="hero-btn">
+            <i class="fas fa-arrow-down"></i> View My Work
+        </a>
+    </div>
+</section>
+<!-- Attractive About Me Section -->
+<section class="about-attractive" id="about">
+    <div class="about-flex-container">
+        <!-- Photo Label with Photo inside (Circle) -->
+        <div class="about-photo-label">
+            <span class="photo-label-text"></span>
+            <div class="about-photo-circle">
+                <img src="asset/me.jpg" alt="Mansi Butola"
+                     onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<div class=\'photo-placeholder\'>Add Your Photo Here</div>');" />
+            </div>
+        </div>
+        <!-- About Content Box (Horizontal, Unique, Attractive) -->
+        <div class="about-content-box">
+            <h1 class="about-title">ABOUT ME</h1>
+            <p>
+                Hello! I'm Mansi Butola, a passionate Computer Science student at the Graphic Era Hill university Dehradun. I have a keen interest in software development and machine learning. My journey in technology has been driven by a desire to create impactful solutions and contribute to innovative projects. I enjoy exploring new technologies and applying them to real-world challenges. In my free time, I love reading, coding, and engaging with the tech community.
+            </p>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>Java Chat Application</h3>
+                <p>Java Chat Application: Developed a real-time chat app using Java Swing for GUI and socket programming for client-server communication. Implemented multi-threading for seamless messaging, custom formatting, and real-time status updates.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Loan Prediction System</h3>
+                <p>Loan Prediction System: Developed a loan prediction system using machine learning to assess loan eligibility based on applicant data. The project involved data preprocessing, handling missing values, and encoding categorical variables for model training. Built and evaluated classification models using Support Vector Machine (SVM) and Logistic Regression, achieving an accuracy of 83%.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <h3>Sentiment Analysis</h3>
+                <p>Political Sentiment Analysis Using Twitter Data (Feb 2025 - March 2025): Developed a sentiment analysis system to classify tweets about political figures using NLP and machine learning. Implemented VADER and BERT-based sentiment analysis to categorize tweets as positive, negative, or neutral. Preprocessed data by removing stopwords and punctuation, then visualized trends using Matplotlib and Seaborn. Provided insights into public opinion trends, useful for election analysis and policymaking.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+       <div class="contact-labels-wrapper">
+            <div class="contact-labels-heading">Connect with me</div>
+            <div class="contact-labels">
+                <div class="contact-label-card">
+                    <div class="contact-label-title">GitHub</div>
+                    <a href="https://github.com/MansiButola1234" target="_blank" class="contact-link github">
+                        <i class="fab fa-github"></i> Visit Profile
+                    </a>
+                </div>
+                <div class="contact-label-card">
+                    <div class="contact-label-title">LinkedIn</div>
+                    <a href="https://www.linkedin.com/in/mansi-butola-60ba182a9/" target="_blank" class="contact-link linkedin">
+                        <i class="fab fa-linkedin"></i> Visit Profile
+                    </a>
+                </div>
+                <div class="contact-label-card">
+                    <div class="contact-label-title">Resume</div>
+                    <a href="my_resume (5).pdf" target="_blank" class="contact-link resume">
+                        <i class="fas fa-file-alt"></i> View Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>           
+</section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
